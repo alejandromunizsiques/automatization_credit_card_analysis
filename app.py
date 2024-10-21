@@ -1,0 +1,1 @@
+$x('//span[contains(@class,"btn-text") and contains(text(),"SALDOS Y MOV.TARJETAS CRÉDITO")]').map(x => x.textContent)
