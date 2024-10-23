@@ -14,19 +14,19 @@ except Exception as e:
 
 try:
 
-    extract_xml.login_user( driver = driver,
+    extract_xml.enter_page_account( driver = driver,
                             user_name = config["USER_NAME"],
                             password = config["PASSWORD"] )
 except Exception as e:
 
-    print("the login procces had failed")
+    print("the account enter_page step has failed, error log:")
     print(e)
 
 try:
-    extract_xml.download_excel(driver = driver)
+    extract_xml.account_operation(driver = driver)
 
 except Exception as e:
-    print("the extraction proccess had filed")
+    print("the account operation proccess has filed, error log")
     print(e)
 
 
